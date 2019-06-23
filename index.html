@@ -9,7 +9,7 @@
         .box{
             width: 200px;
             height: 200px;
-            transition: all 4s linear;
+            transition: all 1000000s linear;
             border-radius: 50%;
             position: relative;
             overflow: hidden;
@@ -39,11 +39,13 @@
             left: 100px;
             top: 100px;
         }
+        .box.show,
         .box:hover{
-            transform: translate(800px) rotate(360deg);
+            transform: rotate(3600000deg);
         }
     </style>
 </head>
+
 <body>
     <h2>这是张夏的主页</h2>
     <h3>这是张夏的简历</h3>
@@ -55,5 +57,14 @@
         <div class="box3"></div>
         <div class="box4"></div>
     </div>
+    <script src="./jquery-1.12.4.js">
+    </script>
+    <script>
+        window.onload=function(){
+            // console.log(111);
+            
+        $('.box').addClass('show');
+        }
+    </script>
 </body>
 </html>
