@@ -5,11 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>张夏的首页</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            transition: all 4s linear;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+        .box1,
+        .box2,
+        .box3,
+        .box4{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .box1{
+            background-color: yellow;
+
+        }
+        .box2{
+            background-color: pink;
+            left:100px;
+        }
+        .box3{
+            background-color: red;
+            top: 100px;
+        }
+        .box4{
+            background-color:skyblue;
+            left: 100px;
+            top: 100px;
+        }
+        .box:hover{
+            transform: translate(800px) rotate(360deg);
+        }
+    </style>
 </head>
 <body>
     <h2>这是张夏的主页</h2>
     <h3>这是张夏的简历</h3>
     <p>这是张夏的老婆</p>
     <img src="./meinv01.png" alt="">
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
 </body>
 </html>
